@@ -4,44 +4,17 @@
   box-sizing: border-box;
 }
 
-/* .container{
-  margin: auto;
-  background-color: red;
-  width: 500px;
-  height: 500px;
-  position: relative;
-}
-
-.container .city{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: blue;
-  height: 40px;
-  width: 40px;
-} */
-.container{
-  background-color: rgb(29, 166, 110);
-  z-index: 2;
-}
-
-
 .city{
   width: 100%;
   height: 100vh;
-  /* background-color: rgba(0, 0, 0, 1); */
-  background-color: rgb(29, 166, 110);
   margin: auto;
   position: relative;
-  z-index: 0;
 }
 
 #milan.city{
   background-image: url('https://cdn.pixabay.com/photo/2018/04/24/14/00/dom-3347039__340.jpg');
   background-size: cover;
   background-position: center;
-  z-index: 1;
 }
 
 #dublin.city{
@@ -64,9 +37,21 @@
   color: white;
   font-size: 70px;
   text-transform: uppercase;
-  text-shadow: 2px 2px rgb(0, 0, 0);
+  text-shadow: 2px 5px rgb(0, 0, 0);
 }
 
 .city:hover h2{
   text-shadow: none;
+  cursor: pointer;
+}
+
+.city .transparency{
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.city:hover .transparency{
+  visibility: visible;
 }
