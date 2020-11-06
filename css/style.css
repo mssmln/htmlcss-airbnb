@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* .container{
+  margin: auto;
+  background-color: red;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.container .city{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blue;
+  height: 40px;
+  width: 40px;
+} */
+
+.city{
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 1);
+  margin: auto;
+  position: relative;
+}
+
+#milan.city{
+  background-image: url('https://cdn.pixabay.com/photo/2018/04/24/14/00/dom-3347039__340.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#dublin.city{
+  background-image: url('https://cdn.pixabay.com/photo/2017/05/25/21/20/samuel-beckett-bridge-2344398__340.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#dubai.city{
+  background-image: url('https://cdn.pixabay.com/photo/2016/08/24/19/12/dubai-1617778__340.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.city h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-transform: uppercase;
+
+}
